@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lock Widget</string>
+    <string name="accessibility_service_description">Allows the QuickLock widget to lock the screen. No data is collected.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="service_status_enabled">Service Enabled</string>
+    <string name="service_status_disabled">Service Disabled</string>
+    <string name="shizuku_status_enabled">Shizuku Available</string>
+    <string name="shizuku_status_disabled">Shizuku Not Available</string>
+    <string name="enable_shizuku_button">Request Permission</string>
+    <string name="shizuku_description">Alternatively, you can use Shizuku to lock the screen without accessibility service.</string>
+    <string name="shizuku_preferred_note">Note: Shizuku is the preferred method for locking the screen and will be used if available.</string>
+</resources>
