@@ -1,4 +1,4 @@
-package com.example.lockwidget // Changed package declaration
+package com.example.lockwidget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -25,12 +25,12 @@ internal fun updateAppWidget(
     appWidgetId: Int
 ) {
     val intent = Intent(context, WidgetTapReceiver::class.java).apply {
-        action = "com.example.lockwidget.ACTION_WIDGET_TAP" // Updated action string
+        action = "com.example.lockwidget.ACTION_WIDGET_TAP"
     }
 
     val pendingIntent = PendingIntent.getBroadcast(
         context,
-        0,
+        appWidgetId,
         intent,
         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
     )
@@ -40,4 +40,3 @@ internal fun updateAppWidget(
 
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }
-
